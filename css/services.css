@@ -49,6 +49,7 @@
   display: flex;
   height: 100%;
   flex-direction: column;
+  gap: 8px;
   align-items: center;
   background: #fff;
   padding: 35px 32px 32px;
@@ -56,7 +57,7 @@
 .card-services__figure {
   width: 68px;
   height: 68px;
-  margin-bottom: 26px;
+  margin-bottom: 19px;
 }
 .card-services__title {
   text-align: center;
@@ -65,7 +66,7 @@
   line-height: 123.6%;
   text-transform: capitalize;
   color: #2b2b2b;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 .card-services__subtitle {
   font-weight: 400;
@@ -81,9 +82,16 @@
   line-height: 14px;
   text-decoration: none;
   color: #ffb400;
-  margin-top: 15px;
+  margin-top: auto;
+  position: relative;
 }
 .card-services__link::after {
   content: url("../img/arrow.svg");
+  position: absolute;
   margin-left: 8px;
+  transition: 0.1s ease-in;
+}
+
+.card-services__link:hover::after {
+  transform: translateX(5px);
 }
