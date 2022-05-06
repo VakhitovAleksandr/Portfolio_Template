@@ -1,0 +1,59 @@
+/* Portfolio */
+
+.portfolio {
+  padding: 100px 0;
+  display: grid;
+  gap: 50px;
+}
+.portfolio__head {
+  max-width: 435px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+.portfolio__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 123.6%;
+  text-transform: capitalize;
+  color: #2b2b2b;
+  text-align: center;
+}
+.portfolio__subtitle {
+  font-size: 15px;
+  line-height: 160%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #767676;
+}
+
+/* Tabs */
+
+.tabs {
+  display: grid;
+  gap: 50px;
+}
+.tabs__nav {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: 37px;
+}
+.tabs__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 123.6%;
+  text-transform: capitalize;
+  color: #2b2b2b;
+  text-decoration: none;
+}
+.tabs__content {
+}
+.tabs__item {
+  display: none;
+}
+.tabs__item.open {
+  display: block;
+}
