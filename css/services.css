@@ -32,16 +32,35 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
-.services__col {
-}
 
 /* Card Services*/
 
 .card-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 35px 32px 32px;
 }
 .card-services__figure {
+  width: 68px;
+  height: 68px;
+  margin-bottom: 26px;
 }
 .card-services__title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 123.6%;
+  text-transform: capitalize;
+  color: #2b2b2b;
+  margin-bottom: 15px;
 }
 .card-services__subtitle {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #767676;
 }
