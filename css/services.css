@@ -1,0 +1,47 @@
+/* Services */
+
+.services {
+  padding: 100px 0;
+  display: grid;
+  gap: 50px;
+}
+.services__head {
+  max-width: 435px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+.services__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 123.6%;
+  text-transform: capitalize;
+  color: #2b2b2b;
+  text-align: center;
+}
+.services__subtitle {
+  font-size: 15px;
+  line-height: 160%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #767676;
+}
+.services__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.services__col {
+}
+
+/* Card Services*/
+
+.card-services {
+}
+.card-services__figure {
+}
+.card-services__title {
+}
+.card-services__subtitle {
+}
