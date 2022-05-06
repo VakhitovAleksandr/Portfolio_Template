@@ -86,7 +86,26 @@
   }
 }
 .item-tabs__col {
+  overflow: hidden;
   height: 300px;
+  position: relative;
+}
+.item-tabs__col::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 180, 0, 0.95);
+  opacity: 0;
+  transition: 0.2s ease-in;
+}
+.item-tabs__col:hover .item-tabs__img {
+  transform: scale(1.1);
+}
+.item-tabs__col:hover::after {
+  opacity: 1;
 }
 @media (max-width: 736px) {
   .item-tabs__col {
@@ -98,4 +117,5 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transition: 0.2s ease-in;
 }
