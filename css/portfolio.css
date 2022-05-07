@@ -92,7 +92,10 @@
   position: relative;
 }
 .item-tabs__col::after {
-  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: url("../img/plus.svg");
   position: absolute;
   left: 0;
   top: 0;

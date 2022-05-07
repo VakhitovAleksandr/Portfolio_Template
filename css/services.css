@@ -90,6 +90,7 @@
   position: absolute;
   margin-left: 8px;
   transition: 0.1s ease-in;
+  line-height: 100%;
 }
 
 .card-services__link:hover::after {
