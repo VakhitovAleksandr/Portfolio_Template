@@ -1,0 +1,24 @@
+/* Brands */
+
+.brands {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  padding-bottom: 70px;
+}
+@media (max-width: 650px) {
+  .brands {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+  }
+}
+@media (max-width: 370px) {
+  .brands {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+}
+.brands__figure {
+  display: flex;
+  justify-content: center;
+}

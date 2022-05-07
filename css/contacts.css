@@ -1,7 +1,7 @@
 /* Contacts */
 
 .contacts {
-  padding: 100px 0;
+  padding-bottom: 70px;
 }
 .contacts__row {
   display: grid;
