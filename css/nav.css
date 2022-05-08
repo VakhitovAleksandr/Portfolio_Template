@@ -1,0 +1,33 @@
+/* Nav */
+
+.nav {
+  padding: 50px 22px;
+  height: max-content;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav__menu {
+}
+.menu {
+  display: grid;
+  row-gap: 43px;
+}
+.menu__item {
+  list-style: none;
+}
+.menu__link {
+  text-decoration: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f0f0f6;
+  transition: 0.2s ease-in;
+}
+.menu__link:hover,
+.menu__link--active {
+  background: #ffb400;
+}

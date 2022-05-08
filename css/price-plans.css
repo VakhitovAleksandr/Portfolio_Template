@@ -30,7 +30,7 @@
 .price-plans__row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1spx;
+  gap: 1px;
 }
 
 @media (max-width: 540px) {
