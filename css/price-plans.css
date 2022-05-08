@@ -1,0 +1,73 @@
+/* Price Plans */
+.price-plans {
+  padding-bottom: 253px;
+}
+.price-plans__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.price-plans__col {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Card Price */
+
+.price-card {
+  background: #fff;
+  padding: 54px 31px 25px;
+}
+.price-card__name {
+  text-align: center;
+  font-weight: 600;
+  font-size: 123.6%;
+  text-transform: capitalize;
+  color: #2b2b2b;
+}
+.price-card__head {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 21px;
+  text-align: center;
+}
+.price-card__price {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 123.6%;
+  text-transform: capitalize;
+  color: #2b2b2b;
+}
+.price-card__desc {
+  font-size: 15px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: #767676;
+}
+.price-card__list {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 21px;
+}
+.card-price__item {
+  list-style: none;
+  font-size: 15px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: #2b2b2b;
+}
+.card-price__btn {
+  display: block;
+  font-family: inherit;
+  margin: 0 auto;
+  padding: 11px 41px;
+  background: #ffffff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #2b2b2b;
+}
