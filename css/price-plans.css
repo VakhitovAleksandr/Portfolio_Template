@@ -36,6 +36,7 @@
 @media (max-width: 540px) {
   .price-plans__row {
     grid-template-columns: 1fr;
+    gap: 27px;
   }
 }
 .price-plans__col {
