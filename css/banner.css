@@ -75,6 +75,7 @@
 
 .banner__img {
   position: absolute;
+  top: 0;
   bottom: 0;
   right: 57px;
   z-index: 1;

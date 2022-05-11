@@ -22,11 +22,6 @@
     transform: translateX(0%);
   }
 }
-@media (max-width: 570px) {
-  .sidebar {
-    right: 0;
-  }
-}
 
 /* Profile */
 
