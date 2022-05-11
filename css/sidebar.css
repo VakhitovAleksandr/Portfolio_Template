@@ -16,10 +16,15 @@
     left: 0;
     top: 0;
     height: 100%;
-    overflow-y: auto;
+    overflow-y: scroll;
   }
   .sidebar.active {
     transform: translateX(0%);
+  }
+}
+@media (max-width: 570px) {
+  .sidebar {
+    right: 0;
   }
 }
 
