@@ -5,13 +5,21 @@ class toggleBlock {
     this.block = document.querySelector(block);
     this.target = document.querySelector(target);
 
+    this.show = () => {
+      this.block.classList.add("active");
+      document.body.style.overflow = "hidden";
+    };
+
+    this.hide = () => {
+      this.block.classList.remove("active");
+      document.body.style.overflow = "";
+    };
+
     this.target.addEventListener("click", () => {
-      console.log(this);
-      this.block.classList.toggle("active");
-      if (this.block.classList.contains("active")) {
-        document.body.style.overflow = "hidden";
+      if (!this.block.classList.contains("active")) {
+        this.show();
       } else {
-        document.body.style.overflow = "";
+        this.hide();
       }
     });
   }

@@ -74,6 +74,7 @@
   height: 20px;
   border: none;
   background: none;
+  transition: 0.3s ease-in-out;
 }
 
 .toggle-nav__btn span {
