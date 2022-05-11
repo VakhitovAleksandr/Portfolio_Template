@@ -31,13 +31,76 @@
 .page__wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 15px;
   box-sizing: content-box;
   display: flex;
-  justify-content: space-between;
-  gap: 26px;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .main {
   flex-basis: 970px;
+  padding: 0 26px;
+  box-sizing: content-box;
+  z-index: 1;
+}
+
+@media (max-width: 1270px) {
+  .main {
+    flex-basis: 100%;
+    padding: 0 15px;
+  }
+}
+
+/* Toggle Nav */
+
+.toggle-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  display: none;
+}
+
+@media (max-width: 1270px) {
+  .toggle-nav {
+    display: flex;
+  }
+}
+
+.toggle-nav__btn {
+  margin: 15px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: none;
+}
+
+.toggle-nav__btn span {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: #ffb400;
+}
+
+.toggle-nav__btn span::before,
+.toggle-nav__btn span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #ffb400;
+}
+
+.toggle-nav__btn span::before {
+  transform: translateY(-4px);
+}
+
+.toggle-nav__btn span::after {
+  transform: translateY(4px);
+}
+
+.toggle-sidebar {
 }

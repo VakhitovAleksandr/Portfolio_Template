@@ -9,6 +9,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 2;
+}
+
+@media (max-width: 1270px) {
+  .nav {
+    position: absolute;
+    transform: translateX(100%);
+    transition: 0.3s ease-in-out;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .nav.active {
+    transform: translateX(0%);
+  }
 }
 
 .nav__menu {

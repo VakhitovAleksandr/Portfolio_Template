@@ -2,9 +2,26 @@
 
 .sidebar {
   flex-basis: 305px;
-  height: max-content;
   background: #fff;
   padding: 25px 40px;
+  box-shadow: 4px 0px 10px rgba(47, 122, 249, 0.1);
+  z-index: 2;
+  overflow-y: scroll;
+}
+
+@media (max-width: 1270px) {
+  .sidebar {
+    position: fixed;
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+  }
+  .sidebar.active {
+    transform: translateX(0%);
+  }
 }
 
 /* Profile */
