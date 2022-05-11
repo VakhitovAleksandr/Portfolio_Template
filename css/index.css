@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import url("./banner.css");
-@import url("./aside.css");
+@import url("./sidebar.css");
 @import url("./nav.css");
 @import url("./price-plans.css");
 @import url("./services.css");
@@ -18,13 +18,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*  */
-.container {
-  max-width: 970px;
-  margin: 0 auto;
-  padding: 0 15px;
-  box-sizing: content-box;
-}
+
 /*  */
 .page {
   font-family: "Inter", sans-serif;
@@ -35,7 +29,15 @@
 }
 
 .page__wrapper {
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: space-between;
+  gap: 26px;
+}
+
+.main {
+  flex-basis: 970px;
 }
