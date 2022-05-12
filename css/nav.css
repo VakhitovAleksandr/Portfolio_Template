@@ -3,7 +3,6 @@
 .nav {
   flex-basis: auto;
   padding: 50px 34px;
-  height: max-content;
   background: #fafafa;
   box-shadow: 4px 0px 10px rgba(47, 122, 249, 0.1);
   display: flex;
@@ -20,6 +19,8 @@
     right: 0;
     top: 0;
     bottom: 0;
+    overflow-y: scroll;
+    height: 100%;
   }
 
   .nav.active {
