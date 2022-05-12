@@ -14,7 +14,7 @@
 
 @media (max-width: 1270px) {
   .nav {
-    position: absolute;
+    position: fixed;
     transform: translateX(100%);
     transition: 0.3s ease-in-out;
     right: 0;
