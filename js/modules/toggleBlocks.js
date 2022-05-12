@@ -2,8 +2,20 @@
 
 class toggleBlock {
   constructor(block, target) {
-    this.block = document.querySelector(block);
-    this.target = document.querySelector(target);
+    if (block && target) {
+      this.block = document.querySelector(block);
+      this.target = document.querySelector(target);
+
+      this.target.addEventListener("click", () => {
+        if (!this.block.classList.contains("active")) {
+          this.show();
+        } else {
+          this.hide();
+        }
+      });
+    }
+
+    // Show/Hide Блок
 
     this.show = () => {
       this.block.classList.add("active");
@@ -16,13 +28,7 @@ class toggleBlock {
       document.body.style.overflow = "";
     };
 
-    this.target.addEventListener("click", () => {
-      if (!this.block.classList.contains("active")) {
-        this.show();
-      } else {
-        this.hide();
-      }
-    });
+    // Target parent
 
     this.bodyClick = () => {
       let target = (e) => {
