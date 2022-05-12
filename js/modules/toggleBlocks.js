@@ -8,6 +8,7 @@ class toggleBlock {
     this.show = () => {
       this.block.classList.add("active");
       document.body.style.overflow = "hidden";
+      setTimeout(bodyClick, 0);
     };
 
     this.hide = () => {
@@ -22,6 +23,17 @@ class toggleBlock {
         this.hide();
       }
     });
+
+    function bodyClick() {
+      let target = (e) => {
+        if (!e.target.closest(block)) {
+          document.querySelector(block).classList.remove("active");
+          document.body.style.overflow = "";
+          document.body.removeEventListener("click", target);
+        }
+      };
+      document.body.addEventListener("click", target);
+    }
   }
 }
 
